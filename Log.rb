@@ -19,11 +19,15 @@ class Log
 	end
 
 	def safe_error(prefix, msg)
-		log "#{prefix} >> #{msg}", :cyan, false
+		log "#{prefix} >> #{msg}", :magenta, false
 	end
 
 	def major_error(prefix, msg)
-		log "#{prefix} >> #{msg}", :cyan
+		log "#{prefix} >> #{msg}", :magenta
+	end
+
+	def notify(msg)
+		log msg, :cyan
 	end
 
 	private
