@@ -7,4 +7,4 @@ if config.stop?
 	raise '"stop" is true'
 end
 
-Loop.new config
+Loop.new config, Bitmex.new
