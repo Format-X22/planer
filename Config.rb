@@ -14,14 +14,6 @@ class Config
 		config[:close]
 	end
 
-	def long?
-		config[:long]
-	end
-
-	def short?
-		config[:short]
-	end
-
 	def stop?
 		config[:stop]
 	end
